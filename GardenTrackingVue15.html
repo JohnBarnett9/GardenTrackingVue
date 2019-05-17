@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->		
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+		<!-- import CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+        <!-- import Vue before Element -->
+        <script src="/vue-2.5.17.js"></script>
+
+        <!-- import JavaScript -->
+        <script src="/element-ui-lib-index.js"></script>
+
+		<!--<script src="/vue-2.5.17.js"></script>-->
+		<script src="/vuex-3.0.1.js"></script>
+		<script src="/vue-router.js"></script>
+		<script src="/axios.min.js"></script>		
+
+
+	</head>
+
+
+
+	<body>
+		<div id="root">
+			<el-container>
+				<el-header>
+					<router-link :to="{ path: 'home' }">Home</router-link>
+					<router-link :to="{ path: 'seed'}">Seed</router-link>
+					<router-link :to="{ path: 'admin' }">Admin</router-link>
+					<router-link :to="{ path: 'typetag' }">TypeTag</router-link>
+				</el-header>
+				<el-main>
+					<router-view></router-view>					
+				</el-main>
+			</el-container>
+		</div>
+  		<script type="module" src="./app.js"></script>
+	</body>
+
+
+</html>
+
